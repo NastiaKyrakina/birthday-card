@@ -1,0 +1,144 @@
+@keyframes fadein {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes move {
+    0% {
+        transform: translate(0px, 0px);
+        opacity: 1;
+    }
+    100% {
+        transform: translate(0, -100%);
+        opacity: 0;
+    }
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #b4d1f6;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #f6ca8b;
+    border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+.page-block {
+    width: 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+}
+
+.center-pos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.events-page {
+    min-height: 100vh;
+    height: auto;
+    background: rgb(255,204,94);
+    background: linear-gradient(0deg, rgb(250, 233, 205) 0%, rgb(94, 181, 182) 100%);
+}
+
+.page-main-header {
+    padding: 20px 32px 10px;
+    border-radius: 6px;
+    background: rgb(224 197 113 / 91%);
+    box-shadow: 0 0 16px 10px #eeede1cf;
+    font-family: 'Mouse Memoirs', sans-serif;
+    font-size: 10em;
+    color: #007c96;
+    text-align: center;
+}
+
+.page-secondary-header {
+    padding: 20px 32px 10px;
+    border-radius: 6px;
+    background: rgb(224 197 113 / 91%);
+    box-shadow: 0 0 16px 10px #eeede1cf;
+    font-family: 'Mouse Memoirs', sans-serif;
+    font-size: 5em;
+    color: #007c96;
+    text-align: center;
+}
+
+.bubble {
+    animation: fadein 2s ease-in;
+    width: 80px;
+    height: 80px;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 40px;
+    left: 30px;
+    background-size: contain;
+    display: none;
+    transition: left, top 1s ease-in;
+}
+
+.events-card {
+    display: flex;
+    padding-top: 30px;
+    height: calc(100% - 110px);
+    justify-content: center;
+}
+
+.img {
+    overflow: hidden;
+    margin-right: 15px;
+}
+
+.img img {
+    width: 100%;
+    height: 100%;
+    max-width: 400px;
+    object-fit: cover;
+    border-radius: 26px;
+}
+
+.events-list {
+    display: block;
+    flex: 1;
+    margin: 35px 10px 15px;
+    max-width: 50%;
+}
+
+.event {
+    display: flex;
+    flex-direction: column;
+    background: #f0e3da;
+    padding: 10px 20px;
+    border-radius: 6px;
+    margin-bottom: 15px;
+}
+
+.event-name {
+    font-family: 'Mouse Memoirs', sans-serif;
+    font-size: 2em;
+    word-spacing: 3px;
+    color: #044b5a;
+}
+
+.event-description {
+    padding-top: 15px;
+    font-family: 'Roboto Slab', serif;
+    font-size: 1.5em;
+    color: rgb(43 43 44);
+}
