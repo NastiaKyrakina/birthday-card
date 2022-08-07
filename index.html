@@ -3,16 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <title>24 anniversary</title>
+    <link rel="icon" type="image/x-icon" href="favicon.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Mouse+Memoirs&family=Roboto+Slab&display=swap" rel="stylesheet">    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="stylesheet" href="css/main-page.css">
 </head>
 <body>
 <header></header>
 <main>
     <section class="page-block invitation-page center-pos" style="background-image: url(/assets/fairy-world-26.jpg)">
-        <h1 class="page-main-header">Invitation to Birthday party</h1>
+        <h1 class="page-main-header animate__animated animate__zoomIn">Invitation to Birthday party</h1>
     </section>
     <section class="page-block events-page">
         <h2 class="page-secondary-header">Party program</h2>
@@ -21,25 +23,34 @@
                 <img src="assets/tiger.jpg" alt="tiger">
             </div>
             <ul class="events-list">
-                <li class="event">
+                <li class="event animate__animated animate__backInRight">
                     <h3 class="event-name">Hack the garden</h3>
                     <p class="event-description">Динамічна гра на уважність. Взломай таємницю секретного саду!</p>
                 </li>
-                <li class="event">
+                <li class="event animate__animated animate__backInRight">
                     <h3 class="event-name">Words waterfall</h3>
                     <p class="event-description">Наскільки ти Британська Королева? Витримай атаку підступних <a href="assets/words.jpg">англійських слів.</a></p>
                 </li>
-                <li class="event">
+                <li class="event animate__animated animate__backInRight">
                     <h3 class="event-name">Who is a spy?</h3>
                     <p class="event-description">Знайди шпигуна серед оточення!</p>
                 </li>
-                <li class="event">
+                <li class="event animate__animated animate__backInUp">
                     <h3 class="event-name">Also...</h3>
                     <p class="event-description">Музика, закуски, фрукти, холодні та гарячи напої.</p>
                 </li>
             </ul>
         </div>
-
+    </section>
+    <section class="page-block location-page">
+        <div class="location-block animate__animated animate__zoomIn">
+            <img class="clock-img" src="assets/clock.png" alt="rabbit with clock">
+            <div class="location-lines">
+                <p class="location-details"><span class="location-details__label">Де:</span></span> <span>Північний будинок, Оріхова роща</span></p>
+                <p class="location-details"><span class="location-details__label">Коли:</span> <span>09.08 18.00</span></p>
+                <p class="location-details"><span class="location-details__label">Мати з собою:</span> <span>гариний настрій 😊</span></p>
+            </div>
+        </div>
     </section>
 </main>
 <div class="bubble" id="main-bubble" style="background-image: url(assets/bubble.png)"></div>
