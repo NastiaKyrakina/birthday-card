@@ -16,27 +16,11 @@
             newBubble.style.height = newSize;
             newBubble.style.width = newSize;
             newBubble.style.display = 'block';
-            newBubble.addEventListener('click', (event) => {
-                // newBubble.style.left = `${(Math.floor(Math.random() * 100))}%`;
-                // newBubble.style.top = `${(Math.floor(Math.random() * 100))}%`;
-              const popBubble =  newBubble.animate(
-                [
-                    { transform: 'scale(0, 0)' },
-                    { transform: 'scale(120%, 120%);'}],
-                    {
-                        duration: 100,
-                        iterations: 1
-                    }
-                );
-                popBubble.onfinish = () => {
-                    newBubble.style.display = 'none'
-                };
-            });
             bubblesArr.push(newBubble);
         }
         document.body.append(...bubblesArr);
     }
 
-    // bubblesGenerator();
+    bubblesGenerator();
 
 }())
